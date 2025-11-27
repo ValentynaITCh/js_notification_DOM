@@ -6,8 +6,8 @@ const pushNotification = (coordinates, title, description, type) => {
 
   message.classList.add('notification', type);
   message.style.position = 'fixed';
-  message.style.top = Object.keys(coordinates)[0] + 'px';
-  message.style.right = Object.keys(coordinates)[1] + 'px';
+  message.style.top = coordinates.top + 'px';
+  message.style.right = coordinates.right + 'px';
 
   const header = document.createElement('h2');
 
